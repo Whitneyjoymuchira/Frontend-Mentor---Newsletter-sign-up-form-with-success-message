@@ -1,0 +1,88 @@
+
+/* hsl(4, 100%, 67%)-tomato;
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
+Font size (paragraph): 16px */
+
+
+body{
+    background-color: rgb(2, 2, 24);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    max-width: 750px;
+    padding: .4rem .8rem;
+    padding-right: 2rem;
+    margin-top: 2rem ;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+   
+}
+.title{
+color:hsl(234, 29%, 20%);
+font-weight: 700;
+font-size:2rem ;
+text-align: center;
+margin-top:2rem;
+margin-bottom: auto;
+}
+
+.info{
+    padding:.5rem;
+    color:hsl(235, 18%, 26%);
+    font-size: 1rem;
+   
+}
+.info .item{
+    margin-bottom: 5px;
+}
+.info span{
+   margin-right: 10px;
+}
+.button p{
+    color:hsl(234, 29%, 20%);
+    margin-bottom: 5px;
+}
+
+.input{
+padding:.8rem;
+border-radius: 5px;
+margin-bottom: 1rem;
+}
+.subscribe{
+padding:.8rem;
+border-radius: 5px;
+color: white;
+background-color: hsl(234, 29%, 20%);
+font-weight: 700;
+}
+.subscribe:hover{
+    background-color:hsl(4, 100%, 67%);
+}
+.button{
+    display:flex;
+    flex-direction: column;
+  
+   
+}
+.main{
+   max-width:100%;
+   height:auto;
+   padding:.8rem;
+   margin-right:1.5rem;
+}
+
+@media  screen and (min-width:768px){
+
+   
+
+}
