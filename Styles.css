@@ -1,4 +1,3 @@
-
 /* hsl(4, 100%, 67%)-tomato;
 - Dark Slate Grey: hsl(234, 29%, 20%)
 - Charcoal Grey: hsl(235, 18%, 26%)
@@ -6,83 +5,193 @@
 - White: hsl(0, 0%, 100%)
 Font size (paragraph): 16px */
 
-
-body{
-    background-color: rgb(2, 2, 24);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    font-family: 'Roboto', sans-serif;
+body {
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  font-family: "Roboto", sans-serif;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    max-width: 750px;
-    padding: .4rem .8rem;
-    padding-right: 2rem;
-    margin-top: 2rem ;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 15px;
-   
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  max-width: 750px;
+  padding: 0.4rem 0.8rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  border-radius: 15px;
 }
-.title{
-color:hsl(234, 29%, 20%);
-font-weight: 700;
-font-size:2rem ;
-text-align: center;
-margin-top:2rem;
-margin-bottom: auto;
+.title {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: auto;
 }
 
-.info{
-    padding:.5rem;
-    color:hsl(235, 18%, 26%);
-    font-size: 1rem;
-   
+.info {
+  padding: 0.5rem;
+  color: hsl(235, 18%, 26%);
+  font-size: 16px;
+;
+  font-weight: 400;
+  font:url('../fonts/roboto')
+
 }
-.info .item{
-    margin-bottom: 5px;
+.info span {
+  margin-right: 10px;
 }
-.info span{
-   margin-right: 10px;
-}
-.button p{
-    color:hsl(234, 29%, 20%);
-    margin-bottom: 5px;
+.button p {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 5px;
+  font-weight: 700;
+
 }
 
-.input{
-padding:.8rem;
-border-radius: 5px;
-margin-bottom: 1rem;
+.input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  color: hsl(231, 7%, 60%);
+  font-size: 16px;
 }
-.subscribe{
-padding:.8rem;
-border-radius: 5px;
-color: white;
-background-color: hsl(234, 29%, 20%);
-font-weight: 700;
+.subscribe {
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  font-weight: 700;
 }
-.subscribe:hover{
-    background-color:hsl(4, 100%, 67%);
+.subscribe:hover {
+  background-color: hsl(4, 100%, 67%);
 }
-.button{
-    display:flex;
-    flex-direction: column;
+.button {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  max-width: 100%;
+  height: auto;
+  padding: 0.8rem;
+  margin-right: 1.5rem;
+}
+.mobile{
+    display: none;
+}
+
+.success{
+  max-width:380px;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color:hsl(234, 29%, 20%);
+ display:none
   
-   
-}
-.main{
-   max-width:100%;
-   height:auto;
-   padding:.8rem;
-   margin-right:1.5rem;
+
 }
 
-@media  screen and (min-width:768px){
+.success .title{
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 1rem;
+}
+.successImage{
+margin: 1.3rem;
+margin-bottom: 16px;
+}
+.successText{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  color:hsl(235, 18%, 26%)
 
-   
 
+}
+.success span{
+  color:hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.dismissMessage{
+  color:white;
+  background-color: hsl(234, 29%, 20%);
+  padding:0.8rem 6.3rem;
+  margin-left: 1.2rem;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Roboto' sans-serif;
+  margin-top: 1rem;
+  
+}
+.error{
+  margin-left: 20%;
+  font-weight: 400;
+  color:red;
+  font-weight: 200;
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: black;
+        margin: 0;
+    }
+  .container {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    max-width: 375px;
+    border-radius: 0;
+ 
+
+  }
+  .success{
+   margin-top: 5rem;
+   padding: 1rem;
+   max-width:300px ;
+
+  }
+ 
+  .successText{
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+  .dismissMessage{
+
+    padding:1rem 4.3rem;
+    margin-top: 7rem;
+    margin-bottom: 1.2rem;
+    margin-left: 20px;
+  }
+   .success.container{
+    border-radius: 0;
+   }
+
+  .main {
+    display: none;
+  }
+   /* .info {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  
+  
+  .title{
+    text-align:center;
+    margin-top:5px ;
+    margin-bottom: 0px;
+  } */
+  .mobile{
+display: block;
+max-width: 100%;
+  }
 }
