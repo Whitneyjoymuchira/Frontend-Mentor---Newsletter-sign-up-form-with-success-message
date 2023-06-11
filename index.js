@@ -21,6 +21,7 @@ function submitbuttons() {
       newsLetterInfo.style.display='none';
       imageSection1.style.display='none';
         successMessage.style.display="block";
+        emailInput=""
      
     } else {
       verificationResult.textContent = 'Valid email required.';
@@ -40,7 +41,7 @@ function submitbuttons() {
      
     
   });
-  emailInput("")
+
 }
 
 submitbuttons();
